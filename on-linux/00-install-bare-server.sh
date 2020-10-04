@@ -47,7 +47,7 @@ defaults
 logfile /var/log/msmtp
 aliases /etc/aliases.msmtp
 
-account namecheap
+account mainaccount
 host '$SMTP_HOST'
 port '$SMTP_PORT'
 tls '$SMTP_TLS'
@@ -58,7 +58,7 @@ from '$SMTP_FROM'
 user '$SMTP_USER'
 password '$SMTP_PASS'
 
-account default : namecheap
+account default : mainaccount
 EOF'
 
 echo Configuring nightly auto-update
