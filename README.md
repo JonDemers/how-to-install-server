@@ -15,7 +15,7 @@ git clone https://github.com/JonDemers/how-to-install-server.git
 
 The scripts should work on Ubuntu as well, although this was not tested. Minor adjustments may be needed.
 
-Run the script `./start-remote-install.sh` on your local workstation to start remote server installation. Or run the scripts in `./on-linux/*` on server itself.
+Run the script `./start-remote-install.sh` on your local workstation to start remote server installation. Or run the scripts `./on-linux/*` on server itself.
 
 The result is a WooCommerce LAMP server:
 
