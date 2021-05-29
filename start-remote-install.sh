@@ -20,6 +20,8 @@ source ./server-config.sh
 
 echo Copying files on server...
 
+ssh-keygen.exe -R $SERVER_HOSTNAME
+
 scp -i $SSH_ID_FILE -r on-linux server-config.sh $SSH_USER@$SERVER_HOSTNAME:~
 
 time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "bash ~/on-linux/99-configure-user.sh"

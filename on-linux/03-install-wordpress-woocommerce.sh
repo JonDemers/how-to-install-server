@@ -27,10 +27,11 @@ EOF
 
 WP_INSTALL_DIR=/var/www/$VHOST_PATH
 echo Downloading and installing Wordpress to $WP_INSTALL_DIR
-rm -rf wordpress-5.5.1.tar.gz
-wget https://wordpress.org/wordpress-5.5.1.tar.gz
+WORDPRESS_FILE=wordpress-5.7.2.tar.gz
+rm -rf $WORDPRESS_FILE
+wget https://wordpress.org/$WORDPRESS_FILE
 rm -rf wordpress
-tar xvfz wordpress-5.5.1.tar.gz
+tar xvfz $WORDPRESS_FILE
 # rm -rf $WP_INSTALL_DIR
 mkdir -p $WP_INSTALL_DIR
 cp -r wordpress/* $WP_INSTALL_DIR
@@ -77,7 +78,7 @@ echo "Password: $db_pass"
 echo "Database Host: localhost"
 echo "Table Prefix: wp_ (or leave default value)"
 echo
-echo "On next screen, make sure you use the following email address when creating a user, this will be used as 'From' when sendign emails. Misconfiguring this will cause issues with emails."
+echo "On next screen, make sure you use the following email address when creating a user, this will be used as 'From' when sending emails. Misconfiguring this will cause issues with emails."
 echo "Your Email: $SMTP_FROM"
 echo
 echo "Configure site settings:"
@@ -95,7 +96,7 @@ echo "In Appareance, delete all Menus, Header Footer & Blocks, etc"
 echo
 echo "Import site:"
 echo "In Appearance / Starter Templates, select Elementor" 
-echo "Consider eCommerce templates Organic Store (food) or Brandstore or Simply Natural or Custom Printing (fasion)"
+echo "Consider eCommerce templates Brandstore or Organic Store (food) or Simply Natural or Custom Printing (fasion)"
 echo "Click on Import Complete Site, check Delete previously imported site, and import"
 echo
 echo "Configure Woocommerce settings:"
@@ -118,3 +119,7 @@ echo
 echo "Create a test order on the site (use a different browser or logout from wordpress admin):"
 echo "Reboot the VM to make sure everything works correctly after reboots"
 echo "Check to see Customer from test order is there (could take some time before appearing...)"
+
+echo "TODO TODO TODO TODO TODO FRENCH FRENCH FRENCH FRENCH FRENCH"
+echo "TODO Install 'accept cookie prompt' plugin"
+
