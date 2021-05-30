@@ -119,7 +119,3 @@ echo
 echo "Create a test order on the site (use a different browser or logout from wordpress admin):"
 echo "Reboot the VM to make sure everything works correctly after reboots"
 echo "Check to see Customer from test order is there (could take some time before appearing...)"
-
-echo "TODO TODO TODO TODO TODO FRENCH FRENCH FRENCH FRENCH FRENCH"
-echo "TODO Install 'accept cookie prompt' plugin"
-
