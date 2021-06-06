@@ -108,7 +108,7 @@ echo " - Allow customers to create an account on the \"My account\" page"
 echo "On same page, uncheck this:"
 echo " - When creating an account, automatically generate an account password"
 echo
-echo "Setup stripe:"
+echo "Setup stripe (optional - PayPal is another alternative):"
 echo "In WooCommerce / Home, click 'Set up payments', select Stripe so that it installs Stripe option"
 echo "In WooCommerce / Settings / Payments, locate Stripe and set it up with test API key/secret"
 echo " - Test mode"
