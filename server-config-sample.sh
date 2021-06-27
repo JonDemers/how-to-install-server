@@ -29,5 +29,8 @@ VHOST_PATH=example.com
 # Subdomain and subpath installation is also supported, for instance: https://subdomain.example.com/my-store
 # VHOST_PATH=subdomain.example.com/my-store
 
+# Mautic install
+MAUTIC_VHOST_PATH=t.example.com
+
 # Work in progress
 #ESPO_1_VHOST=espo.example.com

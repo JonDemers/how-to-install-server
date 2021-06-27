@@ -41,3 +41,5 @@ time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/02-ins
 time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/03-install-wordpress-woocommerce.sh"
 
 #time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/04-install-espocrm.sh $ESPO_1_VHOST $ESPO_1_ADMIN_EMAIL"
+
+#time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/05-install-mautic.sh"
