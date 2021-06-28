@@ -71,18 +71,32 @@ EOF'
 
 fi
 
-echo ================================ SUCCESS ================================
-echo
-echo "To complete the installation, follow docs at https://docs.mautic.org/en/setup/getting-started#pre-flight-checks"
-echo
-echo "Your installation: http://$MAUTIC_VHOST_PATH/"
-echo "Database Host: localhost"
-echo "Database Port: 3306"
-echo "Database Name: $db_user"
-echo "Database Table Prefix: <empty> (leave default value)"
-echo "Database Username: $db_user"
-echo "Database Password: $db_pass"
-echo
-echo "On next screens, use this email:"
-echo "Your Email: $SMTP_FROM"
-echo
+echo "
+
+================================ SUCCESS ================================
+
+To complete the installation, follow docs at https://docs.mautic.org/en/setup/getting-started#pre-flight-checks
+
+Your installation: https://$MAUTIC_VHOST_PATH/
+  Database Host: localhost
+  Database Port: 3306
+  Database Name: $db_user
+  Database Table Prefix: <empty> (leave default value)
+  Database Username: $db_user
+  Database Password: $db_pass
+
+On next screens, use this email:
+  Your Email: $SMTP_FROM
+
+Go to https://$MAUTIC_VHOST_PATH/s/config/edit
+  Go to System Settings
+    Update CORS Settings
+
+Go to https://$MAUTIC_VHOST_PATH/s/config/edit
+  Go to Email Settings
+    Under Mail Send Settings, Send test email
+    Under Message Settings, configure Default email signature
+
+Go to https://$MAUTIC_VHOST_PATH/s/users/edit/1
+  Set Timezone (you may need to logout/login for it to take effect)
+"
