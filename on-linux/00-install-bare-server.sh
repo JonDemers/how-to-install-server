@@ -70,7 +70,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 echo
 echo ===========================================================
 echo
-echo Staring $(date)
+echo Staring \$(date)
 echo
 
 echo Memory usage before upgrade
