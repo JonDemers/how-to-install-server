@@ -38,7 +38,7 @@ sleep 20
 time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/01-install-mariadb.sh"
 time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/02-install-apache-and-php.sh"
 
-time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/03-install-wordpress-woocommerce.sh"
+#time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/03-install-wordpress-woocommerce.sh"
 
 #time ssh -i $SSH_ID_FILE $SSH_USER@$SERVER_HOSTNAME "sudo bash ~/on-linux/04-install-espocrm.sh $ESPO_1_VHOST $ESPO_1_ADMIN_EMAIL"
 
